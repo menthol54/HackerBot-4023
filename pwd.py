@@ -39,7 +39,7 @@ temp_pass = rand_digit  # + rand_upper + rand_lower + rand_symbol
 # set of characters, we fill the rest of
 # the password length by selecting randomly from the combined
 # list of character above.
-for x in range(MAX_LEN - 4):
+for x in range(MAX_LEN - 9):
     temp_pass = temp_pass + random.choice(COMBINED_LIST)
 
     # convert temporary password into array and shuffle to
